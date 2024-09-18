@@ -31,6 +31,9 @@ interface propTypes
     | "heading-md-default"
     | "heading-md-mid"
     | "heading-md-rare"
+    | "heading-base-default"
+    | "heading-base-mid"
+    | "heading-base-rare"
     | "heading-sm-default"
     | "heading-sm-mid"
     | "heading-sm-rare"
@@ -70,6 +73,7 @@ export const Typography = React.memo(
           "text-[96px] font-medium": size == "heading-lg-default",
           "text-[65px] font-medium": size == "heading-md-default",
           "text-[50px] font-medium": size === "heading-sm-default",
+          "text-[40px] font-medium": size === "heading-base-default",
           "text-[28px] font-medium": size === "heading-xsm-default",
           "text-[22px] font-medium": size === "body-lg-default",
           "text-[20px] font-medium": size === "body-md-default",
@@ -80,6 +84,8 @@ export const Typography = React.memo(
           "text-[96px] font-semibold": size == "heading-lg-mid",
           "text-[65px] font-semibold": size == "heading-md-mid",
           "text-[50px] font-semibold": size === "heading-sm-mid",
+          "text-[40px] font-semibold": size === "heading-base-mid",
+
           "text-[28px] font-semibold": size === "heading-xsm-mid",
           "text-[22px] font-semibold": size === "body-lg-mid",
           "text-[20px] font-semibold": size === "body-md-mid",
@@ -88,8 +94,10 @@ export const Typography = React.memo(
 
           //------------- Rare or 700px  & font with different sizes-----------------//
           "text-[96px] font-bold": size == "heading-lg-rare",
-          "text-[65px] font-bold": size == "heading-md-rare",
-          "text-[50px] font-bold": size === "heading-sm-rare",
+          "text-[65px] leading-tight font-bold": size == "heading-md-rare",
+          "text-[50px] leading-snug font-bold": size === "heading-sm-rare",
+          "text-[40px] font-bold": size === "heading-base-rare",
+
           "text-[28px] font-bold": size === "heading-xsm-rare",
           "text-[22px] font-bold": size === "body-lg-rare",
           "text-[20px] font-bold": size === "body-md-rare",
