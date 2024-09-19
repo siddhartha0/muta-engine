@@ -1,6 +1,6 @@
 import coding from "../../assets/code-img.png";
 import { CodeContent } from "../../constants";
-import { Button, Typography } from "../../units";
+import { ImageInfoDiv } from "../common/image-info-div";
 
 export const CodingSection = () => {
   return (
@@ -11,31 +11,14 @@ export const CodingSection = () => {
 
       <section className="flex flex-col gap-16 z-10 py-16 px-20">
         {CodeContent.map((code) => (
-          <div key={code.id} className="flex z-10 place-items-center gap-20">
-            <img
-              src={code.img}
-              alt="img"
-              style={{
-                order: code.imgorder,
-                zIndex: 999,
-              }}
-            />
-
-            <div
-              className={`flex flex-col z-10 py-8 gap-16 ${
-                code.descOrder === 1 ? "place-items-end text-end" : ""
-              } `}
-              style={{
-                order: code.descOrder,
-              }}
-            >
-              <Typography size="heading-base-rare">{code.title}</Typography>
-              <Typography size="body-md-default"> {code.content}</Typography>
-              <Button usage="primary-gradient" className="w-[20%] ">
-                Learn More
-              </Button>
-            </div>
-          </div>
+          <ImageInfoDiv
+            content={code.content}
+            descOrder={code.descOrder}
+            img={code.img}
+            imgorder={code.imgorder}
+            title={code.title}
+            key={code.id}
+          />
         ))}
       </section>
 

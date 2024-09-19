@@ -1,6 +1,8 @@
 import { memo } from "react";
 import {
+  AboutFeatureSection,
   AboutUsHeroSection,
+  BottomSection,
   SecondarySection,
   WhatWeDoSection,
 } from "../components";
@@ -11,6 +13,8 @@ export const AboutUsPage = memo(() => {
       <AboutUsHeroSection />
       <SecondarySection />
       <WhatWeDoSection />
+      <AboutFeatureSection />
+      <BottomSection />
     </div>
   );
 });
