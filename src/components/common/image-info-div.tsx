@@ -12,7 +12,7 @@ interface propTypes {
 export const ImageInfoDiv = memo(
   ({ content, descOrder, img, imgorder, title }: propTypes) => {
     return (
-      <div className="flex z-10 place-items-center gap-20">
+      <div className="grid md:grid-cols-2 z-10 place-items-center gap-20">
         <img
           src={img}
           alt="img"
@@ -24,7 +24,7 @@ export const ImageInfoDiv = memo(
 
         <div
           className={`flex flex-col z-10 py-8 gap-16 ${
-            descOrder === 1 ? "place-items-end text-end" : ""
+            descOrder === 1 ? "md:place-items-end md:text-end" : ""
           } `}
           style={{
             order: descOrder,

@@ -4,7 +4,7 @@ import hero from "../../assets/Bubble_hero.png";
 
 export const HeroSection = memo(() => {
   return (
-    <div className="flex  relative py-16 px-16 justify-between  place-items-center">
+    <div className="flex  relative lg:py-16 py-8 px-16 justify-between  place-items-center">
       <section id="content" className=" z-10 flex w-[715px]  flex-col gap-10">
         <Button usage="primary-gradient" className="w-[50%]">
           Protecting code, Preserving Innovation
@@ -34,7 +34,7 @@ export const HeroSection = memo(() => {
         </div>
       </section>
 
-      <section id="bubble">
+      <section id="bubble" className="hidden md:flex">
         <img src={hero} alt="hero" />
       </section>
     </div>

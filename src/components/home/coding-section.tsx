@@ -4,12 +4,12 @@ import { ImageInfoDiv } from "../common/image-info-div";
 
 export const CodingSection = () => {
   return (
-    <div className="flex relative flex-col z-10 ">
+    <div className="flex  relative flex-col z-10 ">
       <section className="py-16 z-10 px-60 flex place-self-center">
-        <img src={coding} alt="code" className="w-[700px] " />
+        <img src={coding} alt="code" className="w-[700px] hidden md:flex " />
       </section>
 
-      <section className="flex flex-col gap-16 z-10 py-16 px-20">
+      <section className="flex flex-col gap-16 z-10 md:py-16 md:mt-0 -mt-20 px-20">
         {CodeContent.map((code) => (
           <ImageInfoDiv
             content={code.content}

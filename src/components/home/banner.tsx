@@ -3,10 +3,10 @@ import { Typography } from "../../units";
 
 export const Banner = () => {
   return (
-    <div className="flex py-12 z-10 px-36 gap-14 place-items-center">
+    <div className="lg:flex md:grid md:grid-cols-2 py-16 md:py-12 z-10 px-36 gap-14 place-items-center">
       {BannerData.map((banner) => (
         <section
-          className="flex gap-7 z-10  place-items-center"
+          className="lg:flex grid md:grid-cols-2 grid-cols-1 gap-2 md:gap-7 z-10 py-4 md:py-0 w-full place-items-center"
           key={banner.id}
         >
           <Typography size="heading-base-mid">{banner.amount}</Typography>
@@ -17,7 +17,9 @@ export const Banner = () => {
           >
             {banner.title}
           </Typography>
-          {banner.id !== 3 && <div className="bg-white w-[1px] h-4" />}
+          {banner.id !== 3 && (
+            <div className="bg-white w-[1px] h-4 hidden lg:flex" />
+          )}
         </section>
       ))}
     </div>

@@ -18,7 +18,7 @@ interface propTypes {
 export const FeatureLayout = memo(
   ({ header, content, features }: propTypes) => {
     return (
-      <div className="flex justify-between gap-16 relative py-16 px-36">
+      <div className="grid md:grid-cols-2 justify-between gap-16 relative py-16 px-36">
         <section className="flex flex-col gap-12 z-10">
           <Typography size="heading-base-mid">{header}</Typography>
 
@@ -28,7 +28,7 @@ export const FeatureLayout = memo(
 
         <section className="flex flex-col z-10 gap-12">
           {features.map((feature) => (
-            <div className="flex gap-5 z-10 w-full">
+            <div className="flex gap-5 z-10 w-full" key={feature.id}>
               <Icon
                 icon={feature.icon}
                 fontSize={28}
