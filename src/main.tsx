@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage } from "./pages";
+import { AboutUsPage, HomePage } from "./pages";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -11,6 +11,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<HomePage />} />
+          <Route path="about-us" element={<AboutUsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

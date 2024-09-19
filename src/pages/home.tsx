@@ -5,7 +5,6 @@ import {
   CodingSection,
   FeatureSection,
   BottomBanner,
-  Footer,
 } from "../components";
 
 export const HomePage = memo(() => {
@@ -16,7 +15,6 @@ export const HomePage = memo(() => {
       <CodingSection />
       <FeatureSection />
       <BottomBanner />
-      <Footer />
     </div>
   );
 });

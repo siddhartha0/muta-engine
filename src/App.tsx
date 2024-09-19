@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 
 const HomePage = () => {
   return (
@@ -7,6 +7,7 @@ const HomePage = () => {
       <Navbar />
       <div className="w-[500px] absolute top-0  left-0  h-[780px] bg-gradient-to-br from-secondary via-primary to-primary -z-[-1]" />
       <Outlet />
+      <Footer />
     </div>
   );
 };

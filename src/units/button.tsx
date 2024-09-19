@@ -30,7 +30,7 @@ export const Button = React.memo(
 
             //--------- Background Color------------//
             "bg-brand text-black ": usage === "brand",
-            "bg-black text-white border  border-brand drop-shadow-xl shadow-xl   ":
+            "bg-black text-white border  border-brand shadow-brand shadow-[0_-2px_1px_1px_rgba(59,130,246,1)]   ":
               usage === "primary-gradient",
             //--------- End of Background Color------------//
           }

@@ -85,7 +85,6 @@ export const Typography = React.memo(
           "text-[65px] font-semibold": size == "heading-md-mid",
           "text-[50px] font-semibold": size === "heading-sm-mid",
           "text-[40px] font-semibold": size === "heading-base-mid",
-
           "text-[28px] font-semibold": size === "heading-xsm-mid",
           "text-[22px] font-semibold": size === "body-lg-mid",
           "text-[20px] font-semibold": size === "body-md-mid",

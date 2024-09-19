@@ -1,15 +1,15 @@
 import { memo } from "react";
 import logo from "../../assets/companylogo.png";
-import { FooterData, FooterIcon } from "../../constants/footer-data";
+import { FooterData, FooterIcon } from "../../constants/";
 import { Typography } from "../../units";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 export const Footer = memo(() => {
   return (
-    <div className="flex flex-col gap-12 py-12 mt-20 px-20">
-      <section className="flex justify-between">
+    <div className="flex z-10 flex-col gap-12 py-12 mt-20 px-20">
+      <section className="flex z-10 justify-between">
         <img src={logo} alt="pics" />
-        <div className="flex gap-8">
+        <div className="flex gap-8 z-10">
           {FooterData.map((footer) => (
             <Typography size="body-sm-default" key={footer.id}>
               {footer.title}{" "}
@@ -17,8 +17,8 @@ export const Footer = memo(() => {
           ))}
         </div>
       </section>
-      <hr className="bg-fadish-white w-full h-[2px]" />
-      <section className="flex justify-between place-items-center">
+      <hr className="bg-fadish-white w-full z-10 h-[2px]" />
+      <section className="flex justify-between z-10 place-items-center">
         <Typography size="body-sm-default">
           MutaEngine @ 2024. All rights reserved.
         </Typography>
