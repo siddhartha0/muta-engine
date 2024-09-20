@@ -4,9 +4,12 @@ import hero from "../../assets/Bubble_hero.png";
 
 export const HeroSection = memo(() => {
   return (
-    <div className="flex  relative lg:py-16 py-8 px-16 justify-between  place-items-center">
-      <section id="content" className=" z-10 flex w-[715px]  flex-col gap-10">
-        <Button usage="primary-gradient" className="w-[50%]">
+    <div className="flex  relative lg:py-16 py-2 md:px-16 px-8 justify-between  place-items-center">
+      <section
+        id="content"
+        className=" z-10 flex md:w-[715px]  flex-col gap-10"
+      >
+        <Button usage="primary-gradient" className="md:w-[50%] w-[80%]">
           Protecting code, Preserving Innovation
         </Button>
 

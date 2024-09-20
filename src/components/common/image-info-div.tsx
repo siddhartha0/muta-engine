@@ -23,7 +23,7 @@ export const ImageInfoDiv = memo(
         />
 
         <div
-          className={`flex flex-col z-10 py-8 gap-16 ${
+          className={`flex flex-col  z-10 md:py-8 md:mt-0 -mt-8  lg:gap-16 gap-8 ${
             descOrder === 1 ? "md:place-items-end md:text-end" : ""
           } `}
           style={{

@@ -3,7 +3,7 @@ import { Button, Typography } from "../../units";
 
 export const BottomBanner = memo(() => {
   return (
-    <div className="rounded-3xl flex place-items-center py-12 px-36 bg-gradient-to-br from-faidsh-grey justify-between w-[80%] via-ternary to-black m-auto">
+    <div className="rounded-3xl md:flex grid gap-10  place-items-center md:py-12 md:px-36  py-8 bg-gradient-to-br from-faidsh-grey justify-between w-[80%] via-ternary to-black m-auto">
       <section className="flex flex-col gap-8 w-[70%]">
         <Typography
           as="div"

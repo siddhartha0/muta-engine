@@ -18,11 +18,15 @@ interface propTypes {
 export const FeatureLayout = memo(
   ({ header, content, features }: propTypes) => {
     return (
-      <div className="grid md:grid-cols-2 justify-between gap-16 relative py-16 px-36">
-        <section className="flex flex-col gap-12 z-10">
-          <Typography size="heading-base-mid">{header}</Typography>
+      <div className="grid lg:grid-cols-2 z-10 justify-between gap-16 relative py-16 md:px-36 px-8">
+        <section className="flex flex-col md:gap-12 gap-8 z-10">
+          <Typography size="heading-base-mid" className="z-10">
+            {header}
+          </Typography>
 
-          <Typography size="body-sm-default">{content}</Typography>
+          <Typography size="body-sm-default" className="z-10">
+            {content}
+          </Typography>
           <Button className="w-[20%]">Get Started</Button>
         </section>
 
@@ -37,7 +41,7 @@ export const FeatureLayout = memo(
                 className="text-brand bg-default  rounded-full "
               />
 
-              <section className="flex flex-col gap-3">
+              <section className="flex flex-col z-10 gap-3">
                 <Typography size="body-md-rare">{feature.title}</Typography>
                 <Typography size="body-sm-default">
                   {feature.content}
@@ -46,7 +50,7 @@ export const FeatureLayout = memo(
             </div>
           ))}
 
-          <div className="w-[380px] absolute  -top-36  right-0  h-[650px] bg-gradient-to-br from-secondary  via-default to-base -z-[-1] blur-2xl" />
+          <div className="md:w-[380px] w-[50px]  rounded-full absolute  -top-36  right-0  h-[650px] bg-gradient-to-br from-secondary  via-default to-base -z-[-1] blur-3xl" />
         </section>
       </div>
     );

@@ -5,7 +5,7 @@ import bg from "../../assets/Vector.png";
 
 export const WhatWeDoSection = memo(() => {
   return (
-    <section className="flex flex-col z-10 text-center gap-10 relative py-16 px-20">
+    <section className="flex flex-col z-10 md:text-center md:gap-10 gap-6  relative lg:py-16 -mt-12 lg:mt-0 md:px-20 px-8">
       <Typography size="heading-lg-rare">What We Do ?</Typography>
       <Typography>
         We provide advanced software protection with our Polymorphic Code
@@ -13,7 +13,7 @@ export const WhatWeDoSection = memo(() => {
         engineering, and unauthorized modifications.
       </Typography>
 
-      <div className="flex gap-8">
+      <div className="md:flex grid grid-cols-1 gap-10">
         {WhatWeDoData.map((data) => (
           <section
             className="flex flex-col gap-8 place-items-center py-12 px-12 rounded-3xl border border-faidsh-grey  shadow-brand shadow-[0_0_0px_1px_rgba(59,130,246,1)] "
@@ -26,7 +26,11 @@ export const WhatWeDoSection = memo(() => {
             }}
           >
             <Typography>{data.content}</Typography>
-            <img src={data.img} alt="pics" className="h-[280px] w-[512px]" />
+            <img
+              src={data.img}
+              alt="pics"
+              className="md:h-[280px] md:w-[512px]"
+            />
           </section>
         ))}
       </div>

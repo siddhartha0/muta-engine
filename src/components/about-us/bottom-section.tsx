@@ -5,9 +5,9 @@ import { ImageInfoDiv } from "../";
 
 export const BottomSection = memo(() => {
   return (
-    <div className="flex flex-col gap-12 place-items-center py-16 px-20">
+    <div className="flex flex-col gap-12 place-items-center lg:py-16 lg:px-20 px-12">
       <Typography size="heading-base-rare">Why Choose MutaEngine ?</Typography>
-      <section className="flex gap-12 ">
+      <section className="md:flex grid gap-12 ">
         {BottomData.map((data) => (
           <div className="flex flex-col border border-brand rounded-xl py-6 px-4 text-center gap-4 shadow-brand shadow-[0_1px_2px_1px_rgba(59,130,246,1)]">
             <img src={data.img} alt="" />
@@ -17,7 +17,7 @@ export const BottomSection = memo(() => {
         ))}
       </section>
 
-      <section className="py-16 flex gap-20">
+      <section className="md:py-16 flex gap-20">
         <ImageInfoDiv
           content={BottomSectionCodeData.content}
           descOrder={BottomSectionCodeData.descOrder}
@@ -27,7 +27,7 @@ export const BottomSection = memo(() => {
         />
       </section>
 
-      <div className="rounded-3xl flex place-items-center py-10 px-16 bg-gradient-to-br from-faidsh-grey justify-between w-[80%] via-ternary to-black m-auto">
+      <div className="rounded-3xl md:flex grid gap-8 place-items-center py-10  md:px-16 px-2   bg-gradient-to-br from-faidsh-grey justify-between md:w-[80%] via-ternary to-black md:m-auto">
         <section className="flex flex-col gap-6 w-[70%] ">
           <Typography
             as="div"
