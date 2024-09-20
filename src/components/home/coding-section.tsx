@@ -9,7 +9,7 @@ export const CodingSection = () => {
         <img src={coding} alt="code" className="w-[700px] hidden md:flex " />
       </section>
 
-      <section className="flex flex-col md:gap-16 gap-24 z-10 md:py-16 md:mt-0 -mt-28 md:px-20 px-8">
+      <section className="flex flex-col gap-14 md:gap-24  z-10 md:py-16 md:mt-0 -mt-28 md:px-20 px-8">
         {CodeContent.map((code) => (
           <ImageInfoDiv
             content={code.content}

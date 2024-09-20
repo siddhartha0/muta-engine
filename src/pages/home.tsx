@@ -9,7 +9,7 @@ import {
 
 export const HomePage = memo(() => {
   return (
-    <div className="flex relative flex-col ">
+    <div className="flex relative flex-col">
       <HeroSection />
       <Banner />
       <CodingSection />

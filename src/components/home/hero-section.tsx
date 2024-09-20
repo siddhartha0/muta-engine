@@ -7,7 +7,7 @@ export const HeroSection = memo(() => {
     <div className="flex  relative lg:py-16 py-2 md:px-16 px-8 justify-between  place-items-center">
       <section
         id="content"
-        className=" z-10 flex md:w-[715px]  flex-col gap-10"
+        className="z-10 flex md:w-[715px] flex-col md:gap-10 gap-5"
       >
         <Button usage="primary-gradient" className="md:w-[50%] w-[80%]">
           Protecting code, Preserving Innovation
@@ -31,7 +31,7 @@ export const HeroSection = memo(() => {
           Software.
         </Typography>
 
-        <div className="flex place-items-center gap-8">
+        <div className="flex place-items-center md:gap-8 gap-4">
           <Button size="small">Learn More</Button>
           <Button usage="primary-gradient">Start Now</Button>
         </div>

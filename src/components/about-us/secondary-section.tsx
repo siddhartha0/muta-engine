@@ -7,7 +7,7 @@ export const SecondarySection = memo(() => {
     <section className="flex flex-col z-10 md:text-center gap-5 relative py-16 lg:px-20 md:px-16 p-8 ">
       <Typography size="heading-lg-rare">Who We Are</Typography>
 
-      <div className="flex flex-col md:gap-16  lg:w-full z-10 ">
+      <div className="flex flex-col md:gap-16 gap-4 lg:w-full z-10 ">
         {SecondarySectionContent.map((code) => (
           <section
             key={code.id}

@@ -14,7 +14,7 @@ export const AboutUsHeroSection = memo(() => {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex flex-col gap-6 z-10 lg:py-0 md:py-16   lg:px-36 md:px-16 px-8   ">
+      <div className="flex flex-col gap-6 z-10 lg:py-0 md:py-16 lg:px-36 md:px-16 px-8   ">
         <Typography size="heading-lg-rare">Our Mission</Typography>
         <Typography size="body-md-default" className="md:w-[640px]">
           At MutaEngine, our mission is to revolutionize software security by

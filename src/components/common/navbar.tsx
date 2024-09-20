@@ -19,7 +19,7 @@ export const Navbar = memo(() => {
       <section
         className={`lg:flex ${
           menuOption ? "grid" : "hidden"
-        } z-[2366] lg:gap-8 gap-2  absolute lg:relative lg:right-0 md:right-12 right-2  bg-white lg:bg-primary mix-blend-lighten   lg:p-0 p-4  top-20   lg:top-0  lg:ml-10  lg:place-items-center`}
+        } z-20 lg:gap-8 gap-2  absolute lg:relative lg:right-0 md:right-12 right-2  bg-brand lg:bg-primary mix-blend-lighten   lg:p-0 p-4  top-20   lg:top-0  lg:ml-10  lg:place-items-center`}
         id="menu"
         ref={menuRef}
       >
@@ -27,10 +27,10 @@ export const Navbar = memo(() => {
           <Link
             to={nav.path}
             key={nav.id}
-            className="flex place-items-center gap-2"
+            className="flex place-items-center gap-2 z-10"
             onClick={() => setMenuOption(false)}
           >
-            <Typography size="body-sm-default" bgWhite>
+            <Typography size="body-sm-default" usage="default" bgWhite>
               {nav.title}
             </Typography>
             {nav.icon && <Icon icon={nav.icon} color="white" height={20} />}

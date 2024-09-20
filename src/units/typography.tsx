@@ -117,7 +117,7 @@ export const Typography = React.memo(
           //----------color------------//
           "text-brand": usage == "brand",
           "text-white": usage == "default",
-          "text-primary lg:text-white": usage == "default" && bgWhite,
+          "text-primary lg:text-white": usage === "default" && bgWhite,
           "text-black": usage == "black",
           //----------End of color------------//
         })}

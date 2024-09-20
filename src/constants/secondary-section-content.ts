@@ -11,7 +11,7 @@ export const SecondarySectionContent = [
     descOrder: 2,
   },
   {
-    id: 1,
+    id: 2,
     imgorder: 2,
     descOrder: 1,
     content:

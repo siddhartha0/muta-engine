@@ -1,11 +1,12 @@
 import React from "react";
-import classnames from "classnames";
+import classname from "classnames";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   size?: "small" | "default";
   usage?: "brand" | "primary-gradient";
+
   className?: string;
 }
 
@@ -19,7 +20,7 @@ export const Button = React.memo(
   }: ButtonProps): JSX.Element => {
     return (
       <button
-        className={classnames(
+        className={classname(
           `${className} flex place-items-center justify-center gap-3   font-medium leading-7 min-w-[120px] `,
 
           {
